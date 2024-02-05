@@ -17,7 +17,7 @@ This package provides functionality to generate magic squares of odd and doubly 
 
 ## Installation
 ```bash
-npm install your-package-name --save
+npm install magic-squares-generator --save
 ```
 
 ## License
