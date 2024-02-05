@@ -18,3 +18,8 @@ This package provides functionality to generate magic squares of odd and doubly 
 ## Installation
 ```bash
 npm install your-package-name --save
+```
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE.md) file for details.

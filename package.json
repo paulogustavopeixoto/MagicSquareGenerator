@@ -1,11 +1,12 @@
 {
   "name": "magic-square-generator",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "version": "0.1.0",
+  "description": "A Node.js package to generate and print magic squares.",
+  "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"No tests specified\" && exit 0"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "Your Name",
+  "license": "MIT",
+  "keywords": ["magic-square", "math", "puzzle"]
 }
