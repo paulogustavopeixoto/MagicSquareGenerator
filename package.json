@@ -1,6 +1,6 @@
 {
   "name": "magic-squares-generator",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "A Node.js package to generate and print magic squares.",
   "main": "src/index.js",
   "scripts": {
@@ -8,5 +8,9 @@
   },
   "author": "Paulo Assis Peixoto",
   "license": "MIT",
-  "keywords": ["magic-square", "math", "puzzle"]
+  "keywords": [
+    "magic-square",
+    "math",
+    "puzzle"
+  ]
 }
