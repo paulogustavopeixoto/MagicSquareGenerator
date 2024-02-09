@@ -1,6 +1,6 @@
 {
   "name": "magic-squares-generator",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "A Node.js package to generate and print magic squares.",
   "main": "index.js",
   "scripts": {
