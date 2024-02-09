@@ -24,7 +24,31 @@ function generateOddMagicSquare(n) {
             col = nextCol;
         }
     }
+
+    // Apply transformations to introduce randomness
+    square = applyRandomTransformations(square);
+
     return square;
 }
+
+function applyRandomTransformations(square) {
+    const transformations = [
+        square => square, // No transformation
+        square => square.map(row => row.reverse()), // Reflect vertically
+        square => square.reverse(), // Reflect horizontally
+        square => rotateSquare(square), // Rotate 90 degrees
+        square => rotateSquare(rotateSquare(square)), // Rotate 180 degrees
+        square => rotateSquare(rotateSquare(rotateSquare(square))), // Rotate 270 degrees
+    ];
+
+    // Choose a random transformation and apply it
+    const randomTransformation = transformations[Math.floor(Math.random() * transformations.length)];
+    return randomTransformation(square);
+}
+
+function rotateSquare(square) {
+    return square[0].map((val, index) => square.map(row => row[index]).reverse());
+}
+
 
 module.exports = generateOddMagicSquare;

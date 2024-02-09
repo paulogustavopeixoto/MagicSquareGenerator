@@ -12,19 +12,30 @@
 
 function generateDoublyEvenMagicSquare(n) {
     let square = Array.from({ length: n }, () => Array(n).fill(0));
+    let numbers = [];
     let i, j;
 
-    // Initial fill of the square with sequential numbers
+    // Generate a list of numbers 1 to n^2
+    for (i = 1; i <= n * n; i++) {
+        numbers.push(i);
+    }
+
+    // Shuffle the numbers to introduce randomness
+    for (i = numbers.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [numbers[i], numbers[j]] = [numbers[j], numbers[i]];
+    }
+
+    // Fill the square with shuffled numbers
     for (i = 0; i < n; i++) {
         for (j = 0; j < n; j++) {
-            square[i][j] = n * i + j + 1;
+            square[i][j] = numbers[n * i + j];
         }
     }
 
-    // Inversion rule to adjust specific cells for the magic square property
+    // Apply the inversion rule to adjust specific cells for the magic square property
     for (i = 0; i < n; i++) {
         for (j = 0; j < n; j++) {
-            // Invert the value for cells in the corner or center 4x4 sub-squares
             if (i % 4 < 2 && j % 4 < 2 || i % 4 >= 2 && j % 4 >= 2) {
                 square[i][j] = (n * n + 1) - square[i][j];
             }
@@ -33,5 +44,6 @@ function generateDoublyEvenMagicSquare(n) {
 
     return square;
 }
+
 
 module.exports = generateDoublyEvenMagicSquare;
