@@ -1,4 +1,5 @@
-![NPM Version](https://img.shields.io/npm/v/magic-squares-generator)
+![NPM Version](https://img.shields.io/npm/v/magic-squares-generator) ![NPM Downloads](https://img.shields.io/npm/dy/magic-squares-generator)
+
 
 ```
 __/\\\\____________/\\\\___________/\\\\\\\\\\\__________/\\\________/\\\________/\\\_____/\\\\\\\\\_______/\\\\\\\\\______/\\\\\\\\\\\\\\\_____/\\\\\\\\\\\_________________/\\\\\\\______________/\\\\\\\\\\_____________/\\\_        
